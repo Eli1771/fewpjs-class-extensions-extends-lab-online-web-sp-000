@@ -33,7 +33,13 @@ class Square extends Polygon {
   get isValid() {
     if (this.countSides === 4) {
       const sideLength = this.sides[0];
-      console.log(sideLength);
+      let valid = true;
+      for (let i = 1; i < 4; i++) {
+        if (sides[i] != sideLength) {
+          valid = false;
+        }
+      }
+      return valid;
     } else {
       return false;
     }
