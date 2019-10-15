@@ -22,6 +22,9 @@ class Triangle extends Polygon {
       const secondValid = this.sides[1] < this.sides[0] + this.sides[2]; 
       const thirdValid = this.sides[2] < this.sides[0] + this.sides[1];
       
+      return firstValid && secondValid && thirdValid;
+    } else {
+      return false;
     }
   }
 }
