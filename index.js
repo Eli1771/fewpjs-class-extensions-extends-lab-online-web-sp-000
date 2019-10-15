@@ -28,3 +28,14 @@ class Triangle extends Polygon {
     }
   }
 }
+
+class Square extends Polygon {
+  get isValid() {
+    if (this.countSides === 4) {
+      const sideLength = this.sides[0];
+      console.log(sideLength);
+    } else {
+      return false;
+    }
+  }
+}
