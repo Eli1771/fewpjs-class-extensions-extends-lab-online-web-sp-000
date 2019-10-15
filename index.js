@@ -19,7 +19,8 @@ class Triangle extends Polygon {
     if (this.countSides === 3) {
       
       const firstValid = this.sides[0] < this.sides[1] + this.sides[2];
-      console.log('first valid? ' + firstValid);
+      const secondValid = this.sides[1] < this.sides[0] + this.sides[2]; 
+      const thirdValid = this.sides[2] < this.sides[0] + this.sides[1];
       
     }
   }
